@@ -1,0 +1,5 @@
+## Problema 1: Diferentes paradigmas de interface do usuário {#problema-1-diferentes-paradigmas-de-interface-do-usu-rio}
+
+Todas as três plataformas incorporam formas semelhantes de apresentar a interface gráfica do usuário (GUI) e a interação com o dispositivo, através de multi touch, mas há muitas diferenças. Cada plataforma tem diferentes maneiras de navegar em torno de aplicações e páginas, diferentes convenções para á apresentação de dados, diferentes maneiras de invocar e menus de exibição, e até mesmo diferentes abordagens ao toque.
+
+Os usuários se acostumaram a interagir com aplicativos em uma plataforma específica e esperam aproveitar esse conhecimento com aplicações futuras. Cada plataforma adquire a sua própria cultura associada, e essas convenções culturais, em seguida, influenciam desenvolvedores.

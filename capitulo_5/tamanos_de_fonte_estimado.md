@@ -1,0 +1,21 @@
+## Tamanos de fonte estimado {#tamanos-de-fonte-estimado}
+
+A propriedade FontSize do Label e Button são do tipo double. FontSize, indica a altura aproximada de caracteres da fonte a partir do fundo descendente para o topo ascendente, muitas vezes (dependendo do tipo de letra) incluindo marcas bem diacríticas. Na maioria dos casos, você vai querer definir esta propriedade pelo valor retornado do método Device.GetNamedSize. Isso permite que você especifique NamedSize (Default, Micro, Small, Medium, or Large.)
+
+Você pode trabalhar com tamanhos de fonte numéricos reais, mas há um pequeno problema envolvido (a ser discutido em detalhes em breve). Para a maior parte, os tamanhos de fonte são expressos nas mesmas unidades independentes do dispositivo, utilizado através Xamarin.Forms, o que significa que você pode calcular o tamanho das fontes independentes de dispositivo com base na resolução plataforma.
+
+Por exemplo, suponha que você queira usar uma fonte de 12 pontos em seu programa. A primeira coisa que você deve saber é que, enquanto uma fonte de 12 pontos pode ter um tamanho confortável para o material impresso ou uma tela de desktop, em um telefone é muito grande. Mas vamos continuar.
+
+Há 72 pontos por polegada, por isso uma fonte de 12 pontos é um sexto de uma polegada. Multiplique pelo DPI de resolução. Isso é cerca de 27 unidades independentes de dispositivo no iOS e Android e 40 unidades independentes de dispositivo no Windows Phone.
+
+Vamos escrever um pequeno programa chamado FontSizes, que começa com uma exibição semelhante ao programa NamedFontSizes no Capítulo 3, mas, em seguida, exibe um texto com tamanho de ponto numéricos, convertido em unidades que utilizam o dispositivo resolução deviceindependent:
+
+Para facilitar as comparações entre as três telas, os fundos têm sido uniformemente definidos como branco e os rótulos para preto. Observe a BoxView inserido no StackLayout entre os dois blocos foreach da definição HeightRequest, lhe dá uma altura de aproximadamente um octogésimo de uma polegada, independente do dispositivo, e se assemelha a uma regra horizontal.
+
+Os tamanhos visuais resultantes são bastante consistentes entre as três plataformas e fornece uma idéia aproximada do que você pode esperar. Os números entre parênteses são os valores numéricos da FontSize em unidades independentes de dispositivo da plataforma especificadas.
+
+Existe um problema, no entanto.que envolve o Android. Execute o Android Settings app. Vá para a página de exibição e selecione o item Tamanho da fonte. Você vai ver que pode selecionar um tamanho Pequeno, Normal (o padrão), Large, ou enorme. Esta facilidade é para o benefício de pessoas que não podem ler confortavelmente o texto, porque é muito pequeno, ou que não têm nenhum problema de leitura de texto minúsculo e realmente preferem aplicativos para mostrar um pouco mais de texto na tela.
+
+Escolha algo diferente do que o normal. Quando você executar o programa FontSizes novamente, você vai ver que todo o texto exibido tem um tamanho diferente, ou maior ou menor dependendo da configuração que você selecionou. Como você vai ser capaz de notar, a partir dos números em parênteses na metade superior da lista, o método retorna Device.GetNamedSize diferentes valores com base nesta definição. Para NamedSize.Default, o método retorna 14 quando o ajuste é Normal (como a captura de tela acima mostra), mas retorna 12 para um cenário de Small, 16 para a Large, e 18 1/3 para Huge.
+
+Além do valor devolvido no Device.GetNamedSize, a lógica de processamento de texto subjacente também afeta o tamanho do texto. O programa continua a calcular os mesmos valores para os vários tamanhos de pontos, mas o texto na metade inferior da tela, também muda de tamanho. Este é um resultado do Android para Label usando o valor do ComplexUnitType.Sp (que se traduz em constante Android COMPLEX_UNIT_SP) para calcular o tamanho da fonte. O padrão de escape para SP é em pixel, uma escala adicional apenas para o texto além do uso de pixels independentes do dispositivo.

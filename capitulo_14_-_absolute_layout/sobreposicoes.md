@@ -1,0 +1,15 @@
+## Sobreposições {#sobreposi-es}
+
+A capacidade de se sobrepõem crianças no AbsoluteLayout tem algumas aplicações interessantes e úteis, entre eles, sendo a capacidade para encobrir a sua interface de usuário toda com algo chamado às vezes uma sobreposição. Talvez sua página está realizando um trabalho demorado e você não quer que o usuário interagir com a página até que o trabalho seja concluído. Você pode colocar uma sobreposição semitransparente sobre a página e talvez exibir um ActivityIndicator ou um ProgressBar.
+
+Aqui está um programa chamado SimpleOverlay que demonstra essa técnica. O arquivo XAML começa com uma AbsoluteLayout cobrindo a página inteira. O primeiro filho do que AbsoluteLayout é um StackLayout, o que você deseja preencher a página também. No entanto, os HorizontalOptions padrão e colocações VerticalOptions de preenchimento na StackLayout não funcionam para crianças de um AbsoluteLayout. Em vez disso, o StackLayout enche o AbsoluteLayout através da utilização dos AbsoluteLayout.LayoutBounds e AbsoluteLayout.LayoutFlags ligados ligável propriedades:
+
+O segundo filho do AbsoluteLayout é um ContentView, que também preenche o AbsoluteLayout e basicamente se senta em cima do StackLayout. No entanto, observe que a propriedade IsVisible é definido como Falso, o que significa que este ContentView e seus filhos não participam no layout. O ContentView ainda é uma criança do AbsoluteLayout, mas ele é simplesmente ignorado quando o sistema de layout é dimensionamento e prestação de todos os elementos da página.
+
+Este ContentView é a sobreposição. Quando IsVisible está definido para, ele bloqueia a entrada do usuário Fiel às vistas abaixo dele. O BackgroundColor é definido como um cinza semitransparente, e um ProgressBar está centralizado verticalmente dentro dele. A ProgressBar se assemelha a um Slider sem um polegar. A ProgressBar está sempre orientada horizontalmente. Não defina as HorizontalOptions propriedade de um ProgressBar para Iniciar, Centro, ou Terminar a menos que você também defina sua propriedade WidthRequest. Um programa pode indicar o progresso, definindo a propriedade Progresso da ProgressBar para um valor entre 0 e 1\. Isto é demonstrado no manipulador clicado para o único botão funcional na aplicação. Esse manipulador simula um trabalho demorado que está sendo executada no código com um temporizador que determina quando cinco segundos terem passado:
+
+O manipulador clicado começa definindo a propriedade IsVisible da sobreposição de verdade, o que revela a sobreposição e seu filho ProgressBar e impede ainda mais a interação com a interface do usuário por baixo. O temporizador está definido para um décimo segundo e calcula uma nova propriedade Progress para o ProgressBar baseado no tempo decorrido. Quando os cinco segundos acabarem, a sobreposição é novamente oculto ao retorno de chamada timer retorna false.
+
+Aqui está o que ele se parece com a sobreposição abrangendo a página e o longo trabalho em andamento:
+
+Uma sobreposição pode não estar limitada a um ProgressBar ou um ActivityIndicator. Você pode incluir um botão Cancelar ou outros pontos de vista.

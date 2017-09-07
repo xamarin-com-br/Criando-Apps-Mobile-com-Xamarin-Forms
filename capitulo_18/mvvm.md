@@ -1,0 +1,11 @@
+## MVVM {#mvvm}
+
+Você pode se lembrar de suas primeiras experiências com programação? É provável que o seu principal objetivo foi apenas começando o funcionamento do programa e, em seguida, fazê-lo funcionar corretamente. Você provavelmente não pensa muito sobre a organização ou estrutura do programa. Isso foi algo que veio mais tarde.
+
+A indústria de computadores como um todo passou por uma evolução similar. Como desenvolvedores, todos nós agora percebemos que uma vez que um aplicativo começa a crescer em tamanho, é geralmente uma boa idéia de impor algum tipo de estrutura ou arquitetura no código. A experiência com este processo sugere que muitas vezes é melhor começar a pensar sobre essa arquitetura, talvez, antes de qualquer código é escrito em tudo. Na maioria dos casos, a estrutura do programa desejável esforça-se para uma &quot;separação de interesses&quot; através da qual diferentes peças do foco do programa em diferentes tipos de tarefas.
+
+Em um programa de gráfica interativa, uma técnica óbvia é a de separar a interface do usuário da lógica não-interface de usuário subjacente, às vezes chamado de lógica de negócios. A primeira descrição formal de tal arquitetura de interfaces gráficas de usuário foi chamado Model-View-Controller (MVC), mas isso chitecture ar- desde então tem dado origem a outros derivados a partir dele.
+
+Em certa medida, a natureza da própria interface de programação influencia a aplicação arquitetural. Por exemplo, uma interface de programação que inclui uma linguagem de marcação com ligações de dados podem sugerir uma determinada forma de estruturar uma aplicação.
+
+Há de fato um modelo de arquitetura que foi projetado especificamente com XAML em mente. Isto é conhecido como Model-View-ViewModel ou MVVM. Este capítulo aborda os conceitos básicos de MVVM (incluindo a interface de comando), mas você verá mais sobre MVVM no próximo capítulo, que abrange “collection views”. Além disso, alguns outros recursos de Xamarin.Forms são muitas vezes utilizados em conjunto com MVVM; esses recursos incluem gatilhos e comportamentos, e eles são o assunto do Capítulo 23.
