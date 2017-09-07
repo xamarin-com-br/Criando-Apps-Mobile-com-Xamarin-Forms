@@ -1,2 +1,14 @@
- This is the third version of a book about writing applications with Xamarin.Forms, the exciting mobile development platform for iOS, Android, and Windows unveiled by Xamarin in May 2014. \(The first two versions of this book were Preview Editions.\) Xamarin.Forms lets you write shared user-interface code in C\# and XAML \(the Extensible Application Markup Language\) that maps to native controls on these platforms. The Windows support of Xamarin.Forms includes the Windows Runtime \(WinRT\) for targeting Windows 8.1 and Windows Phone 8.1 devices, and the Universal Windows Platform \(UWP\), which is a form of the Windows Runtime that targets Windows 10 and Windows 10 Mobile devices with a single program. The two previous versions of this book were called Preview Editions because they were not complete. At 1200 pages, this is the first edition that can claim to be complete, even though several topics are not included and Xamarin.Forms continues to be progressively enhanced with no sign of slowing down. All information about this book can be found on the book’s home page at: https://developer.xamarin.com/r/xamarin-forms/book
+# Introdução
+
+Esta é a terceira versão de um livro sobre escrever aplicativos com Xamarin.Forms, o excitante celular  plataforma de desenvolvimento para iOS, Android e Windows desvelada por Xamarin em maio de 2014. \(Os dois primeiros As versões deste livro foram Pré-visualizar.\) O Xamarin.Forms permite que você escreva o código compartilhado da interface do usuárioem C \# e XAML \(o Extensible Application Markup Language\) que mapeia para controles nativos nesses plataformas.
+
+O suporte do Windows do Xamarin.Forms inclui o Windows Runtime \(WinRT\) para segmentação Dispositivos Windows 8.1 e Windows Phone 8.1 e a Plataforma Universal Windows \(UWP\), que é um forma do Windows Runtime que visa os dispositivos móveis Windows 10 e Windows 10 com um único programa.
+
+As duas versões anteriores deste livro foram chamadas de Edições de visualização porque elas não estavam completas.
+
+Em 1200 páginas, esta é a primeira edição que pode pretender estar completa, embora vários tópicos não estão incluídos e Xamarin.Forms continua a ser progressivamente aprimorado sem sinal de desaceleração baixa.
+
+Todas as informações sobre este livro podem ser encontradas na página inicial do livro em:
+
+https://developer.xamarin.com/r/xamarin-forms/book
 
