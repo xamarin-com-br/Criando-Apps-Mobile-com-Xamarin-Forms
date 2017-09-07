@@ -10,7 +10,7 @@
   * [Problema 2: diferentes ambientes de desenvolvimento](capitulo_1/problema_2_diferentes_ambientes_de_desenvolvimento.md)
   * [Problema 3: diferentes interfaces de programação](capitulo_1/problema_3_diferentes_interfaces_de_programacao.md)
   * [Problema 4: Diferentes linguagens de programação](capitulo_1/problema_4_diferentes_linguagens_de_programacao.md)
-  * [O C \# e .NET solução](capitulo_1/o_c__e_net_solucao.md)
+  * [O C\# e .NET solução](capitulo_1/o_c__e_net_solucao.md)
   * [Uma linguagem única para todas as plataformas](capitulo_1/uma_linguagem_unica_para_todas_as_plataformas.md)
   * [Código Compartilhado](capitulo_1/codigo_compartilhado.md)
   * [Apresentando o Xamarin.Forms](capitulo_1/apresentando_o_xamarinforms.md)
