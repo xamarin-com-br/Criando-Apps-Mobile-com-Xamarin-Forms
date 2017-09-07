@@ -2,6 +2,7 @@
 
 * [Xamarin Forms Livro Completo](README.md)
 * [Prefácio](prefacio.md)
+* [Introdução](introducao.md)
 * [Capítulo 1](capitulo_1/README.md)
   * [Multi-plataforma de desenvolvimento móvel](capitulo_1/multi-plataforma_de_desenvolvimento_movel.md)
   * [A Visão Móvel](capitulo_1/a_visao_movel.md)
@@ -103,12 +104,5 @@
   * [Definindo Bindable Properties](capitulo_11/definindo_bindable_properties.md)
   * [Criando métodos genéricos](capitulo_11/criando_metodos_genericos.md)
   * [The Read-Only Bindable Property](capitulo_11/the_read-only_bindable_property.md)
-* [Capítulo 12](capitulo_12/README.md)
-  * [Estilos](capitulo_12/estilos.md)
-  * [Estilo básico](capitulo_12/estilo_basico.md)
-  * [Estilos no código](capitulo_12/estilos_no_codigo.md)
-  * [Herança de estilo](capitulo_12/heranca_de_estilo.md)
-  * [Estilos Implícitos](capitulo_12/estilos_implicitos.md)
-  * [Estilos dinâmicos](capitulo_12/estilos_dinamicos.md)
-  * [Estilos de dispositivo](capitulo_12/estilos_de_dispositivo.md)
+* Introdução
 
