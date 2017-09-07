@@ -7,8 +7,10 @@ No Xamarin Studio, selecione um projeto de aplicativo na lista **Solution**, cha
 Aqui estão os símbolos que você pode usar:
 
 * Projeto iOS: você verá o símbolo **\_\_IOS\_\_** \(são dois sublinhados antes e depois\)
-* Projeto Android: você não verá nenhum símbolo definido para indicar a plataforma, mas o identificador   **\_\_ANDROID\_\_** é definido de qualquer maneira, bem como vários identificadores** \_\_ANDROID\_nn\_\_**, onde  é compatível com cada nível de Android API.
-*  Projeto UWP: o símbolo WINDOWS\_UWP
+* Projeto Android: você não verá nenhum símbolo definido para indicar a plataforma, mas o identificador
+   **\_\_ANDROID\_\_** é definido de qualquer maneira, bem como vários identificadores** \_\_ANDROID\_nn\_\_**, onde
+  é compatível com cada nível de Android API.
+* Projeto UWP: o símbolo WINDOWS\_UWP
 * Projeto do Windows: o símbolo WINDOWS\_APP
 * Projeto Windows Phone: o símbolo WINDOWS\_PHONE\_APP
 
@@ -51,5 +53,5 @@ O Xamarin.Forms PCL pode acessar outras PCLs suportando as mesmas plataformas, m
 
 A maioria dos programas neste livro usa a abordagem PCL. Esta é a abordagem recomendada para Xamarin.Forms e é preferido por muitos programadores que trabalham com Xamarin.Forms. No entanto, a abordagem SAP também é suportada e definitivamente tem seus defensores também.
 
-Mas por que escolher? Pode ter ambos na mesma solução. Se você criou uma solução Xamarin.Forms solução com um projeto recurso compartilhado, você pode adicionar um novo projeto PCL para a solução, selecionando a biblioteca de classes \(Xamarin.Forms Portable\) modelo. Os projetos de aplicativos podem acessar tanto a SAP e PCL, ea SAP pode acessar o PCL também.
+Mas por que escolher? Pode ter ambos na mesma solução. Se você criou uma solução Xamarin.Forms com um projeto de recurso compartilhado, você pode adicionar um novo projeto PCL para a solução, selecionando a biblioteca de classes \(Xamarin.Forms Portable\) . Os projetos de aplicativos podem acessar tanto a SAP e PCL, ea SAP pode acessar o PCL também.
 
