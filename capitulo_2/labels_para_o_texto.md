@@ -100,9 +100,24 @@ public class GreetingsPage : ContentPage
 
 Este estilo permite a ocorrência de Label a ser definida para a propriedade de conteúdo diretamente, de modo que a etiqueta não exige um nome, assim:
 
+```
+public class GreetingsPage : ContentPage
+{
+ public GreetingsPage()
+ {
+ Content = new Label
+ {
+ Text = "Greetings, Xamarin.Forms!"
+ };
+ }
+}
+```
+
 Para mais layouts de páginas complexos, este estilo de instanciação e inicialização fornece um visual melhor analógico da organização de layouts e views na página. No entanto, nem sempre é tão simples como este exemplo pode indicar se você precisa chamar métodos nesses objetos ou manipuladores de eventos definidos.
 
 Independentemente da forma como você faz isso, se você pode compilar e executar o programa nas três formas de plataformas de cada emulador ou um dispositivo com sucesso, aqui está o que você vai ver:
+
+![](/assets/2.2-contentepage.PNG)
 
 A versão deste programa Greetings é definitivamente o iPhone: A partir do iOS 7, um aplicativo uma única página partes da tela com a barra de status no topo. Qualquer coisa exibida na parte superior de sua página vai ocupar o mesmo espaço que a barra de status, a menos que a aplicação do compense para ele.
 
