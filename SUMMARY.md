@@ -21,7 +21,7 @@
   * [Seu ambiente de desenvolvimento](capitulo_1/seu_ambiente_de_desenvolvimento.md)
   * [Máquinas e IDEs](capitulo_1/maquinas_e_ides.md)
   * [Dispositivos e emuladores](capitulo_1/dispositivos_e_emuladores.md)
-* [Capítulo 2](capitulo_2/README.md)
+* [Capítulo 2 - Anatomia do aplicativo](capitulo_2/README.md)
   * [Anatomia de um aplicativo](capitulo_2/anatomia_de_um_aplicativo.md)
   * [Diga Olá](capitulo_2/diga_ola.md)
   * [Dentro dos arquivos](capitulo_2/dentro_dos_arquivos.md)
