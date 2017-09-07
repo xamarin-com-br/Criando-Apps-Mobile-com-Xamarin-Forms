@@ -1,6 +1,6 @@
 # Capítulo 1 {#cap-tulo-1}
 
-## How does Xamarin.Forms fit in?
+## Onde o Xamarin.Forms se encaixam??
 
 Há muita alegria na programação. Há alegria em analisar um problema, dividindo-o em pedaços,  formular uma solução, mapear uma estratégia, aproximá-la de diferentes direções e elaborar  o código. Há muita alegria em ver o programa executado pela primeira vez e, em seguida, mais alegria em  mergulhando ansiosamente no código para torná-lo melhor e mais rápido.
 
