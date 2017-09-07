@@ -62,6 +62,7 @@ Na solução **Hello**, você também verá um arquivo AssemblyInfo.cs para a cr
 * .NET \(displayed as .NET Portable Subset in Xamarin Studio\)
 * Xamarin.Forms.Core
 * Xamarin.Forms.Xaml
+*  Xamarin.Forms.Platform
 
 Este é um projeto PCL que irá receber a maior parte de sua atenção como você está escrevendo uma aplicação Xamarin.Forms. Em algumas circunstâncias, o código neste projeto pode exigir alguma adaptação para as três plataformas diferentes, e você verá em breve como fazer isso. Você também pode incluir código específico da plataforma nos três projetos de aplicação.
 
@@ -74,6 +75,11 @@ Na seção de referências de cada projeto de aplicativo, você verá referênci
 * Xamarin.Forms.Platform.Android
 * Xamarin.Forms.Platform.iOS
 * Xamarin.Forms.Platform.WP8
+*  Xamarin.Forms.Platform.UAP \(not explicitly displayed in the UWP project\) 
+
+*  Xamarin.Forms.Platform.WinRT  Xamarin.Forms.Platform.WinRT.Tablet 
+
+*  Xamarin.Forms.Platform.WinRT.Phone
 
 Cada uma destas três bibliotecas define um método estático Forms.Init no namespace Xamarin.Forms que inicializa o sistema Xamarin.Forms para essa plataforma particular. O código de inicialização em cada plataforma deve fazer uma chamada para esse método.
 
