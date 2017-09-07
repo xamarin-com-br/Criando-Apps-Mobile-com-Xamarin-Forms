@@ -1,5 +1,15 @@
 ## A opção Xamarin.Forms {#a-op-o-xamarin-forms}
 
+Xamarin.Forms suporta cinco plataformas de aplicativos distintas:
+
+* iOS para programas que são executados no iPhone, iPad e iPod Touch.
+* Android para programas que funcionam em telefones e tablets Android.
+* A Universal Windows Platform \(UWP\) para aplicativos que são executados no Windows 10 ou   Windows 10 Mobile.
+* O Windows Runtime API do Windows 8.1.
+* A API do Windows Runtime do Windows Phone 8.1.
+
+Neste livro, "Windows" ou "Windows Phone" geralmente serão usados como um termo genérico para descrever todas três das plataformas da Microsoft.
+
 No caso geral, uma aplicação Xamarin.Forms é composta de três projetos separados para as três plataformas móveis, com um quarto projeto que contém o código-muito comum muito parecido com o diagrama que apareceu na seção anterior. No entanto, os três projectos de plataformas em um aplicativo Xamarin.Forms são tipicamente muito pequenos, muitas vezes consistindo de apenas stubs com um pouco de código de inicialização do clichê. O Projeto de propriedade compartilhada, ou no portátil projeto Class Library, contém a maior parte do aplicativo, incluindo o código da interface pelo usuário:
 
 ![An illustration showing the interrelationships between the Visual Studio or Xamarin Studio Xamarin.Forms projects, the Xamarin libraries, and the platform APIs.](../assets/an_illustration_showing_the_interre.png)
@@ -14,7 +24,7 @@ Xamarin.Forms.Core também contém uma classe chamada Slider para a exibição d
 
 Isto significa que quando você escreve um programa Xamarin.Forms que tem um interruptor ou um Slider, o que está realmente exibido é o objeto correspondente implementado em cada plataforma.
 
-Aqui está um pequeno programa Xamarin.Forms contendo uma etiqueta dizendo &quot;Olá, Xamarin.Forms!&quot;, Um botão que diz &quot;Clique-me!&quot;, Um interruptor e um Slider. O programa está sendo executado em (a partir da esquerda para a direita) o iPhone, Android e Windows Phone:
+Aqui está um pequeno programa Xamarin.Forms contendo uma etiqueta dizendo "Olá, Xamarin.Forms!", Um botão que diz "Clique-me!", Um interruptor e um Slider. O programa está sendo executado em \(a partir da esquerda para a direita\) o iPhone, Android e Windows Phone:
 
 ![Three side-by-side screenshots showing a program displaying a toolbar, a short text string, a button, a switch, and a slider running on iPhone, Android, and Windows Phone.](../assets/three_side-by-side_screenshots_show.jpeg)
 
@@ -27,3 +37,4 @@ O que é ainda mais interessante é a inclusão neste programa de objetos Ponto 
 O ActionBar Android tem umas reticências vertical eo Windows Phone ApplicationBar tem uma elipse horizontal. Tocar nestas reticências faz com que os itens secundários para ser exibido em uma forma apropriada para estas duas plataformas:
 
 ![Three side-by-side screenshots showing secondary toolbar items displayed in a manner appropriate to Android and Windows Phone.](../assets/three_side-by-side_screenshots_show.jpeg)
+
