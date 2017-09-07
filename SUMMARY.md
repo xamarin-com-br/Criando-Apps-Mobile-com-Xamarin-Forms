@@ -104,5 +104,4 @@
   * [Definindo Bindable Properties](capitulo_11/definindo_bindable_properties.md)
   * [Criando métodos genéricos](capitulo_11/criando_metodos_genericos.md)
   * [The Read-Only Bindable Property](capitulo_11/the_read-only_bindable_property.md)
-* Introdução
 
