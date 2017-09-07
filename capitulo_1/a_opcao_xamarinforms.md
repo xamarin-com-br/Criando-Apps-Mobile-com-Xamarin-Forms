@@ -39,5 +39,23 @@ O que é ainda mais interessante é a inclusão neste programa de seis objetos T
 
 O Android ActionBar tem uma reticência vertical e o CommandBar Universal da Plataforma Windows tem uma reticência horizontal. Tocar nesta reticência faz com que os itens secundários sejam exibidos da maneira apropriada para essas duas plataformas:
 
-![](/assets/1.2-hello.PNG)
+![](/assets/1.2-hello.PNG)O Xamarin.Forms foi originalmente concebido como uma API independente da plataforma para dispositivos móveis. No entanto, o Xamarin.Forms não se limita aos telefones. Aqui está o mesmo programa executado em um simulador iPad Air 2:
+
+![](/assets/1.2-hello-ipad.PNG)
+
+A maioria dos programas deste livro são bastante simples e, portanto, projetados para exibir o melhor da tela do telefone no modo retrato. Mas eles também serão executados em modo paisagem e em tablets.
+
+Aqui está o projeto UWP em um Microsoft Surface Pro 3 executando o Windows 10:
+
+![](/assets/1.4-hello-wintablet.PNG)Observe a barra de ferramentas na parte superior da tela. As elipses já foram pressionadas para revelar os três itens secundários.
+
+As outras duas plataformas suportadas pelo Xamarin.Forms são Windows 8.1 e Windows Phone 8.1. Aqui está o programa do Windows 8.1 executado em uma janela na área de trabalho do Windows 10 e o programa do Windows 8.1 que está sendo executado no dispositivo móvel do Windows 10:
+
+![](/assets/1.5-hello-telawindows.PNG)A tela do Windows 8.1 foi clicada à esquerda com o mouse para revelar os itens da barra de ferramentas na parte inferior.
+
+Nesta tela, os itens secundários estão à esquerda, mas o programa negligentemente esqueceu de atribuir eles ícones. Na tela do Windows Phone 8.1, as reticências na parte inferior foram pressionadas.
+
+As várias implementações da barra de ferramentas revelam que, em um sentido, Xamarin.Forms é uma API que virtualiza não apenas os elementos da interface do usuário em cada plataforma, mas também os paradigmas da interface do usuário.
+
+
 
