@@ -37,7 +37,7 @@
   * [3. Incluir preenchimento apenas para IOS \(PCL ou SAP\)](capitulo_2/3_incluir_preenchimento_apenas_para_ios_pcl_ou_sap.md)
   * [4. Centralizar o label com a página](capitulo_2/4_centralizar_o_label_com_a_pagina.md)
   * [5. Centralizar o texto com o label](capitulo_2/5_centralizar_o_texto_com_o_label.md)
-* [Capítulo 3](capitulo_3/README.md)
+* [Capítulo 3 - Indo Mais Fundo](capitulo_3/README.md)
   * [Mais a fundo no texto](capitulo_3/mais_a_fundo_no_texto.md)
   * [Quebra automática de texto nos parágrafos](capitulo_3/quebra_automatica_de_texto_nos_paragrafos.md)
   * [Cores do texto e do fundo](capitulo_3/cores_do_texto_e_do_fundo.md)
