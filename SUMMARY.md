@@ -107,10 +107,10 @@
 * [Capitulo 12 - Estilos](capitulo-12-estilos.md)
   * [Estilos](capitulo_12/estilos.md)
   * [Estilo Básico](capitulo_12/estilo_basico.md)
-  * [Estilo de Dispositivo](capitulo_12/estilo_de_dispositivo.md)
-  * [Estilo Dinamico](capitulo_12/estilos_dinamicos.md)
-  * [Estilo Implicitos](capitulo_12/estilos_implicitos.md)
   * [Estilo no Código](capitulo_12/estilos_no_codigo.md)
   * [Herança de Estilo](capitulo_12/heranca_de_estilo.md)
+  * [Estilo Implicitos](capitulo_12/estilos_implicitos.md)
+  * [Estilo Dinamico](capitulo_12/estilos_dinamicos.md)
+  * [Estilo de Dispositivo](capitulo_12/estilo_de_dispositivo.md)  
 
 
