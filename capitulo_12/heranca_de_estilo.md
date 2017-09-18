@@ -6,9 +6,11 @@ Todas as propriedades no estilo devem ser definidas por ou herdadas pela classe 
 
 Se você precisar de um estilo apenas para propriedades definidas por "**View**", você pode definir o "**TargetType**" para "**View**" e ainda usar o estilo nos botões ou qualquer outro derivado de "**View**", como nesta versão modificada do programa "**BasicStyle**":
 
+![](/assets/12-17-HerancaEstilo.png)
+
 Como você pode ver, o mesmo estilo é aplicado a todos os "**Button**" e "**Label**" filhos do "**StackLayout**" :
 
-![](/assets/12-17-HerancaEstilo.png)
+
 
 Como você pode ver, o mesmo estilo é aplicado a todos os filhos **Button **e **Label **do **StackLayout**:
 
