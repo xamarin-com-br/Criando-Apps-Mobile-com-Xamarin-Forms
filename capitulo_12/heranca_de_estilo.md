@@ -20,13 +20,15 @@ Sim. Os estilos podem derivar de outros estilos. A classe estilo inclui uma prop
 
 Aqui está o arquivo XAML para um projeto chamado "**StyleInheritance**". O aplicativo faz uma referência para"**Xamarin.FormsBook.Toolkit"** para duas finalidades: ele usa a extensão de marcação "**HslColor**" para demonstrar que as extensões de marcação são ajustes dos valores legítimos em objetos "**Setter**" e para demonstrar que um estilo pode ser definido para uma classe customizada, neste caso "**AltLabel**".
 
-O "**ResourceDictionary**" contém quatro estilos : O primeiro tem uma chave de dicionário de "**VisualStyle**". O estilo com a chave do dicionário de "**baseStyle**" deriva de " **VisualStyle**". Os estilos com teclas de "**labelStyle **"e" **ButtonStyle**" derivam de "**baseStyle** ". 
+O "**ResourceDictionary**" contém quatro estilos : O primeiro tem uma chave de dicionário de "**VisualStyle**". O estilo com a chave do dicionário de "**baseStyle**" deriva de " **VisualStyle**". Os estilos com teclas de "**labelStyle **"e" **ButtonStyle**" derivam de "**baseStyle** ".
 
 ![](/assets/12-19-ExemploEstilot.png)![](/assets/12-19-ExemploEstilo1.png)![](/assets/12-19-ExemploEstilo2.png)
 
 O Estilo do Botão demonstra como definir uma propriedade de valor de um "**Setter**" a um objeto "**OnPlatform**":
 
-Imediatamente após a seção de recursos uma marcação define a propriedade estilo da página com o estilo "VisualStyle":
+Imediatamente após a seção de recursos uma marcação define a propriedade estilo da página com o estilo "**VisualStyle**":
+
+
 
 Como a página deriva de "VisualElement" mas de "View", este é o único estilo no recurso dicionário que pode ser aplicada para a página. No entanto, o modelo não pode ser aplicado a página até depois da seção de recursos, portanto, usar o elemento "form" de "StaticResource" é uma boa solução aqui. O fundo inteiro da página é colorido com base neste estilo, e o estilo também é herdado por todos os outros estilos:
 
