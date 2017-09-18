@@ -105,4 +105,12 @@
   * [Criando métodos genéricos](capitulo_11/criando_metodos_genericos.md)
   * [The Read-Only Bindable Property](capitulo_11/the_read-only_bindable_property.md)
 * [Capitulo 12 - Estilos](capitulo-12-estilos.md)
+  * [Estilo Básico](estilo_basico.md)
+  * [Estilos](estilos.md)
+  * [Estilo de Dispositivo](estilo_de_dispositivo.md)
+  * [Estilo Dinamico](estilos_dinamicos.md)
+  * [Estilo Implicitos](estilos_implicitos.md)
+  * [Estilo no Código](estilos_no_codigo.md)
+  * [Herança de Estilo](heranca_de_estilo.md)
+
 
