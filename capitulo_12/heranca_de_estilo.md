@@ -10,7 +10,7 @@ Se você precisar de um estilo apenas para propriedades definidas por "**View**"
 
 Como você pode ver, o mesmo estilo é aplicado a todos os "**Button**" e "**Label**" filhos do "**StackLayout**" :
 
-
+![](/assets/12-18--TelasHerancaEstilo.png)
 
 Como você pode ver, o mesmo estilo é aplicado a todos os filhos **Button **e **Label **do **StackLayout**:
 
