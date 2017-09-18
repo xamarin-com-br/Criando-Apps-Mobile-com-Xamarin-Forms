@@ -16,11 +16,15 @@ Como você pode ver, o mesmo estilo é aplicado a todos os filhos **Button **e *
 
 Mas supomos que agora você quer expandir este estilo, mas de forma diferente para "**Button**" e "**Label**". Isso é possível?
 
-Sim. Os estilos podem derivar de outros estilos. A classe estilo inclui uma propriedade chamada "BasedOn" do tipo estilo. No código, você pode definir essa propriedade "BasedOn" diretamente a outro objeto estilo. Em "XAML" você definir o atributo "BasedOn" para uma extensão de marcação "StaticResource" que faz referência a um estilo criado anteriormente. O novo estilo pode incluir objetos "Setter" para novas propriedades ou usá-las para substituir propriedades no estilo anterior. O estilo "BasedOn" deve ter como alvo a mesma classe ou uma classe ancestral do novo estilo "TargetType".
+Sim. Os estilos podem derivar de outros estilos. A classe estilo inclui uma propriedade chamada "**BasedOn**" do tipo estilo. No código, você pode definir essa propriedade "**BasedOn**" diretamente a outro objeto estilo. Em "**XAML**" você definir o atributo "**BasedOn**" para uma extensão de marcação "**StaticResource**" que faz referência a um estilo criado anteriormente. O novo estilo pode incluir objetos "**Setter**" para novas propriedades ou usá-las para substituir propriedades no estilo anterior. O estilo "**BasedOn**" deve ter como alvo a mesma classe ou uma classe ancestral do novo estilo "**TargetType**".
 
-Aqui está o arquivo XAML para um projeto chamado "StyleInheritance". O aplicativo faz uma referência para"Xamarin.FormsBook.Toolkit" para duas finalidades: ele usa a extensão de marcação "HslColor" para demonstrar que as extensões de marcação são ajustes dos valores legítimos em objetos "Setter" e para demonstrar que um estilo pode ser definido para uma classe customizada, neste caso "AltLabel".
+Aqui está o arquivo XAML para um projeto chamado "**StyleInheritance**". O aplicativo faz uma referência para"**Xamarin.FormsBook.Toolkit"** para duas finalidades: ele usa a extensão de marcação "**HslColor**" para demonstrar que as extensões de marcação são ajustes dos valores legítimos em objetos "**Setter**" e para demonstrar que um estilo pode ser definido para uma classe customizada, neste caso "**AltLabel**".
 
-O "ResourceDictionary" contém quatro estilos : O primeiro tem uma chave de dicionário de "VisualStyle". O estilo com a chave do dicionário de "baseStyle" deriva de " VisualStyle". Os estilos com teclas de "labelStyle "e" ButtonStyle" derivam de "baseStyle ". O Estilo do Botão demonstra como definir uma propriedade de valor de um "Setter" a um objeto "OnPlatform":
+O "**ResourceDictionary**" contém quatro estilos : O primeiro tem uma chave de dicionário de "**VisualStyle**". O estilo com a chave do dicionário de "**baseStyle**" deriva de " **VisualStyle**". Os estilos com teclas de "**labelStyle **"e" **ButtonStyle**" derivam de "**baseStyle** ". 
+
+![](/assets/12-19-ExemploEstilot.png)![](/assets/12-19-ExemploEstilo1.png)![](/assets/12-19-ExemploEstilo2.png)
+
+O Estilo do Botão demonstra como definir uma propriedade de valor de um "**Setter**" a um objeto "**OnPlatform**":
 
 Imediatamente após a seção de recursos uma marcação define a propriedade estilo da página com o estilo "VisualStyle":
 
