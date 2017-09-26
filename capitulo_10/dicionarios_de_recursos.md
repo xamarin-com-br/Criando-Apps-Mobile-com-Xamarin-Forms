@@ -8,3 +8,7 @@ Apesar de **x:Static **e **StaticResource **terem nomes um tanto similares, eles
 
 Você vai usar **StaticResource **para a maioria dos propósitos e reservar **DynamicResource **para algumas aplicações especiais, então vamos começar com **StaticResource**.
 
+## 
+
+
+
