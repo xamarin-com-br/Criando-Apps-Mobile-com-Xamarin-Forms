@@ -23,9 +23,7 @@ Não. Cada argumento deve ser delimitado com _**tags**_** **de início e fim. Fe
 
 Você será pressionado para encontrar uso para todos eles, mas provavelmente vai descobrir usos para apenas alguns deles.
 
-O **ParameteredConstructorDemo** exemplo, a seguir, demonstra o uso de **x:Arguments** com argumentos delimitados por _tags_ **x:Double** usando 3 diferentes construtores da estrutura **Color**. O construtor requer 3 parâmetros vermelho, verde e azul com os valores que variam de 0 a 1. Construtor com 4 parâmetros \(que é definido aqui como 0,5\), e o construtor com parâmetro único indica uma sombra de 0 \(preto\) a 1 \(branco\):
-
-O número de elementos dentro de _tags_ **x:Arguments**, e os tipos destes elementos, deve corresponder a um dos construtores da classe ou estrutura. Aqui está o resultado:
+O **ParameteredConstructorDemo** exemplo, a seguir, demonstra o uso de **x:Arguments** com argumentos delimitados por _tags_ **x:Double** usando 3 diferentes construtores da estrutura **Color**. O construtor requer 3 parâmetros vermelho, verde e azul com os valores que variam de 0 a 1. Construtor com 4 parâmetros \(que é definido aqui como 0,5\), e o construtor com parâmetro único indica uma sombra de 0 \(preto\) a 1 \(branco\):![](/assets/08-01-exemplo1)![](/assets/08-01-exemplo02)O número de elementos dentro de _tags_ **x:Arguments**, e os tipos destes elementos, deve corresponder a um dos construtores da classe ou estrutura. Aqui está o resultado:![](/assets/08-02-telas)
 
 O **BoxView **azul é mais claro no fundo branco e escuro no fundo preto porque a transparência dele é de 50% deixando transparecer o fundo da tela.
 
