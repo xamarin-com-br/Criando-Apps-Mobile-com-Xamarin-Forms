@@ -82,7 +82,7 @@
   * [Visualizações personalizadas baseadas em XAML](capitulo_8_-_codigo_e_xaml_em_harmonia/visualizacoes_personalizadas_baseadas_em_xaml.md)
   * [Eventos e Handlers](capitulo_8_-_codigo_e_xaml_em_harmonia/eventos_e_handlers.md)
   * [Gestos de Toque](capitulo_8_-_codigo_e_xaml_em_harmonia/gestos_de_toque.md)
-* [Capítulo 9](capitulo_9/README.md)
+* [Capítulo 9 - Chamadas de API específicas da plataforma](capitulo_9/README.md)
   * [Chamadas de API específicas da plataforma](capitulo_9/chamadas_de_api_especificas_da_plataforma.md)
   * [Pré-processamento no compartilhamento do Projeto](capitulo_9/pre-processamento_no_compartilhamento_do_projeto.md)
   * [As classes paralelas e o compartilhamento do projeto](capitulo_9/as_classes_paralelas_e_o_compartilhamento_do_proje.md)
@@ -111,6 +111,5 @@
   * [Herança de Estilo](capitulo_12/heranca_de_estilo.md)
   * [Estilo Implicitos](capitulo_12/estilos_implicitos.md)
   * [Estilo Dinamico](capitulo_12/estilos_dinamicos.md)
-  * [Estilo de Dispositivo](capitulo_12/estilo_de_dispositivo.md)  
-
+  * [Estilo de Dispositivo](capitulo_12/estilo_de_dispositivo.md)
 
