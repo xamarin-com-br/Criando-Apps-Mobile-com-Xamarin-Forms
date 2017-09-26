@@ -50,5 +50,5 @@ Esta não é tão tedioso como o exemplo anterior, e demonstra como você pode e
 
 ![](/assets/08-18-telas)
 
-No entanto, há um aspecto do projeto ColorViewList que não se qualifica como uma "melhor prática". É a definição da propriedade ColorName em ColorView. Isto realmente deve ser implementado como um objeto BindableProperty_._ Investigar objetos _bindable_ e propriedades _bindable_ ​​é uma das prioridades e será explorada no capítulo 11.
+No entanto, há um aspecto do projeto ColorViewList que não se qualifica como uma "**melhor prática**". É a definição da propriedade **ColorName** em **ColorView**. Isto realmente deve ser implementado como um objeto **BindableProperty**_._ Investigar objetos _bindable_ e propriedades _**bindable**_ ​​é uma das prioridades e será explorada no capítulo 11.
 
