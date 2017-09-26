@@ -67,3 +67,23 @@ Em tempo de execução, a classe App instancia a classe CodePlusXamlPage. O cons
 
 Você não tem que gastar muito tempo examinando o arquivo de código gerado que o analisador XAML cria, mas é útil entender como o arquivo XAML desempenha um papel tanto no processo de construção e durante tempo de execução. No entanto, às vezes um erro na chamada do arquivo XAML gera uma exceção de tempo de execução no LoadFromXaml, então você provavelmente vai ver o arquivo de código gerado aparecer com freqüência, e você deve saber o que é.
 
+# O Compilado XAML
+
+Você tem uma opção para compilar o XAML durante o processo de compilação.
+
+Compilando as verificações de validade por XAML durante o processo de compilação, reduz o tamanho do executável e melhora o tempo de carregamento, mas é um pouco mais recente do que a abordagem de não compilação, então pode haver problemas às vezes.
+
+Para indicar que você deseja compilar todos os arquivos XAML em seu aplicativo, você pode inserir o próximo atributo de montagem em algum lugar em um arquivo de código.
+
+O local mais conveniente é o arquivo Assembly.cs na pasta Propriedades do projeto PCL:![](/assets/07-27-compilador)Você pode colocá-lo em outro arquivo C \#, mas porque é um atributo assembly, ele precisa estar fora de qualquer bloco de namespace. Você também precisará de uma diretiva de uso para Xamarin.Forms.Xaml.
+
+Você pode alternativamente especificar que o arquivo XAML para uma determinada classe é compilado:![](/assets/07-27-atributodecompilacao)A enumeração **XamlCompilationOptions **tem dois membros, **Compile **and **Skip**, o que significa que você pode usar o **XamlCompilation **como um atributo **assembly **para habilitar a compilação XAML para todas as classes no projeto, mas ignorar a compilação XAML para classes individuais usando o membro **Skip**.
+
+Quando você não escolhe compilar o XAML, todo o arquivo XAML está vinculado ao executável como um recurso incorporado, assim como a história de Edgar Allan Poe no programa BlackCat no Capítulo 4. In-deed, você pode acessar o XAML arquivo em tempo de execução usando o método **GetManifestResourceStream**.
+
+Isso é semelhante ao que a chamada **LoadFromXaml **no **InitializeComponent **faz.
+
+Ele carrega o arquivo XAML e analisa por segunda vez, instanciando e inicializando todos os elementos no arquivo XAML, exceto o elemento raiz, que já existe. Quando você escolhe compilar o XAML, esse processo é simplificado um pouco, mas o método **LoadFromXaml **ainda precisa instanciar todos os elementos e criar uma árvore visual.
+
+
+
