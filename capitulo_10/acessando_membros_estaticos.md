@@ -32,11 +32,9 @@ A borda do botão não aparece no Android a menos que a cor de fundo e cores de 
 
 A julgar somente a partir dos recursos visuais, nós realmente temos que acreditar que a largura da borda do botão é cerca de 3,14 de largura, mas as quebras de linha definitivamente funcionam:
 
-A utilização de chaves para as extensões de marcação implica que você não pode exibir o texto cercado por chaves. As chaves neste texto serão substituidas por uma extensão de marcação:
+![](/assets/10-10-telas)
 
-Isso não vai funcionar. Você pode ter chaves em outras partes da cadeia de texto, mas você não pode começar com uma chave esquerda.
+A utilização de chaves para as extensões de marcação implica que você não pode exibir o texto cercado por chaves. As chaves neste texto serão substituidas por uma extensão de marcação:![](/assets/10-11-xaml)Isso não vai funcionar. Você pode ter chaves em outras partes da cadeia de texto, mas você não pode começar com uma chave esquerda.
 
-Se você realmente precisa, no entanto, você pode garantir que o texto seja substituido por uma extensão XAML começando o texto com uma sequência de escape que consiste em um par de chaves esquerda e direita:
-
-Que irá exibir o texto que deseja.
+Se você realmente precisa, no entanto, você pode garantir que o texto seja substituido por uma extensão XAML começando o texto com uma sequência de escape que consiste em um par de chaves esquerda e direita:![](/assets/10-11-xaml1)Que irá exibir o texto que deseja.
 
