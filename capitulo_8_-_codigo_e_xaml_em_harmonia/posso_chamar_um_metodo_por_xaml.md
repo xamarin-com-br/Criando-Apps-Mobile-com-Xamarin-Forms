@@ -6,9 +6,7 @@ A estrutura **Color **define sete métodos estáticos que retornam valores de **
 
 ![](/assets/08-03-xelements)![](/assets/08-03-elementes01)
 
-Os dois primeiros métodos estáticos chamados são ambos chamados **Color.FromRgb,** porém os tipos de elementos dentro da _tag_ **x:Arguments** distingui entre argumentos int que variam de 0 a 255 e argumentos double que variam de 0 a 1. O terceiro é o método **Color.FromHsla**, que cria um valor de cor a partir de componentes matiz, saturação, luminosidade, e componentes alphas. Curiosamente, esta é a única maneira de definir um valor de Color a partir de valores de HSL em um arquivo XAMLusando a APIXamarin.Forms. Aqui está o resultado:
+Os dois primeiros métodos estáticos chamados são ambos chamados **Color.FromRgb,** porém os tipos de elementos dentro da _tag_ **x:Arguments** distingui entre argumentos int que variam de 0 a 255 e argumentos double que variam de 0 a 1. O terceiro é o método **Color.FromHsla**, que cria um valor de cor a partir de componentes matiz, saturação, luminosidade, e componentes alphas. Curiosamente, esta é a única maneira de definir um valor de Color a partir de valores de HSL em um arquivo XAML usando a API Xamarin.Forms. Aqui está o resultado:
 
 ![](/assets/08-04-telas)
-
-
 
