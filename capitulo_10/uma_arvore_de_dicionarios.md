@@ -1,8 +1,8 @@
 ## Uma árvore de dicionários {#uma-rvore-de-dicion-rios}
 
-A classe ResourceDictionary impõe as mesmas regras que outros dicionários: todos os itens no dicionário deve ter chaves, mas chaves duplicadas não são permitidos.
+A classe **ResourceDictionary **impõe as mesmas regras que outros dicionários: todos os itens no dicionário deve ter chaves, mas chaves duplicadas não são permitidos.
 
-No entanto, porque cada instância de VisualElement potencialmente tem o seu próprio dicionário de recursos, sua página pode conter vários dicionários, e você pode usar as mesmas chaves em diferentes dicionários apenas contanto que todas as chaves dentro de cada dicionário são únicas. É concebível que cada elemento visual na árvore visual pode ter seu próprio dicionário, mas realmente só faz sentido um dicionário de recursos se aplicar a vários elementos, então dicionários de recursos só são encontrados geralmente definido em Layout ou objetos Page.
+No entanto, porque cada instância de **VisualElement **potencialmente tem o seu próprio dicionário de recursos, sua página pode conter vários dicionários, e você pode usar as mesmas chaves em diferentes dicionários apenas contanto que todas as chaves dentro de cada dicionário são únicas. É concebível que cada elemento visual na árvore visual pode ter seu próprio dicionário, mas realmente só faz sentido um dicionário de recursos se aplicar a vários elementos, então dicionários de recursos só são encontrados geralmente definido em Layout ou objetos Page.
 
 Você pode construir uma árvore de dicionários com chaves de dicionário que efetivamente sobrescrevem as chaves em outros dicionários. Isto é demonstrado no projeto ResourceTrees. O arquivo XAML para a classe ResourceTreesPage mostra um dicionário de Resources para a Content Page que define recursos com chaves de horzOptions , vertOptions e textColor . O item textColor demonstra como usar OnPlatform em um ResourceDictionary.
 
@@ -37,3 +37,4 @@ Certifique-se de chamar InitializeComponent antes de instanciar a classe de pág
 Cada dicionário de Resource tem um escopo específico: Para o dicionário de Resources na classe App, esse escopo é o aplicativo inteiro. Um dicionário de Resources na ContentPage aplica-se à classe página inteira.
 
 Como você verá no Capítulo 12, os itens mais importantes em um dicionário de Resources são geralmente objetos do tipo Style. Em geral, você terá Styes para todo o aplicativo, objetos Style para a página, e objetos Style associados com partes menores da árvore visual.
+
