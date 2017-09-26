@@ -18,9 +18,9 @@ Mas você pode invocar um construtor de cores usando **x: Arguments** ou um dos 
 
 As propriedades **BackgroundColor **e **BorderColor **dos três botões acima são definidas para valores da classe **OnPlatform**. Felizmente você pode colocar objetos **OnPlatform **diretamente no dicionário:![](/assets/10-28-onplataform)Um item de dicionário para a propriedade **FontSize **é um pouco problemático. A propriedade **FontSize** é do tipo **Double**, então se você está armazenando um valor numérico real no dicionário, isso não é problema. Mas não é possível armazenar a palavra "**grande**" no dicionário como se fosse um double. Somente quando uma string "**grande**" é definida como um atributo **FontSize **é que o analisador XAML usa o **FontSizeConverter**. Por essa razão, você vai precisar para armazenar o item **FontSize **como uma string:![](/assets/10-28-string)Aqui está o dicionário completo neste momento:![](/assets/10-29-dicionariocompleto)
 
-Esta é muitas vezes referida como uma seção de recursos para a página. 
+Esta é muitas vezes referida como uma seção de recursos para a página.
 
-Na programação da vida real, quase todos os arquivos XAML começam com uma seção de recursos. 
+Na programação da vida real, quase todos os arquivos XAML começam com uma seção de recursos.
 
 Você pode fazer referência a itens no dicionário usando a extensão de marcação **StaticResource**, que é suportado pela **StaticResourceExtension**, uma classe privada para Xamarin.Forms. **StaticResourceExtension **define uma propriedade chamada **key **que definiu para o dicionário de chaves. Você pode usar uma **StaticResourceExtension **como um elemento dentro de tags de propriedade de elementos, ou você pode usar **StaticResourceExtension** ou **StaticResource **entre chaves. Se você está usando a sintaxe chave, você pode deixar de fora a **Key **e sinais iguais porque a **Key **é o conteúdo da propriedade de **StaticResourceExtension**.
 
@@ -28,13 +28,7 @@ O seguinte arquivo XAML completo no projeto **ResourceSharing **ilustra três de
 
 ![](/assets/10-30resourcesharing)![](/assets/10-30-resourcesharing1)![](/assets/10-30-resourcesharing3)![](/assets/10-30-resourcesharing4)![](/assets/10-30-resourcesharing5)A sintaxe mais simples do terceiro botão é a mais comum e, na verdade, que a sintaxe é tão onipresente que muitos desenvolvedores XAML de longa data podem estar totalmente familiarizados com as outras variações.
 
-Objetos e valores no dicionário são compartilhados entre todas as referências StaticResource. Não é tão claro no exemplo anterior, mas é algo a ter em mente. Por exemplo, suponha que você armazene um objeto Button no dicionário de recursos:
+Objetos e valores no dicionário são compartilhados entre todas as referências **StaticResource**. Não é tão claro no exemplo anterior, mas é algo a ter em mente. Por exemplo, suponha que você armazene um objeto **Button **no dicionário de recursos:![](/assets/10-31-button)Você pode certamente usar esse objeto **Button **em sua página, adicionando-o às coleções **Children **de um **StackLayout **com o elemento de sintaxe **StaticResourceExtension**:![](/assets/10-33-stalayout)No entanto, você não pode usar esse mesmo item de dicionário na esperança de colocar outra cópia no **StackLayout **:![](/assets/10-34-stalyoutcopy)Isso não vai funcionar. Ambos os elementos fazem referência ao mesmo objeto **Button**, e um elemento visual específicamente podem estar em apenas um local particular na tela. Ele não pode estar em vários locais.
 
-Você pode certamente usar esse objeto Button em sua página, adicionando-o às coleções Children de um StackLayout com o elemento de sintaxe StaticResourceExtension:
-
-No entanto, você não pode usar esse mesmo item de dicionário na esperança de colocar outra cópia no StackLayout :
-
-Isso não vai funcionar. Ambos os elementos fazem referência ao mesmo objeto Button, e um elemento visual específicamente podem estar em apenas um local particular na tela. Ele não pode estar em vários locais.
-
-Por esta razão, elementos visuais não são normalmente armazenados num dicionário de recursos. Se você precisar de multiplos elementos em sua página que têm na sua maioria as mesmas propriedades, você vai querer usar um Style, o que é explorada no Capítulo 12.
+Por esta razão, elementos visuais não são normalmente armazenados num dicionário de recursos. Se você precisar de multiplos elementos em sua página que têm na sua maioria as mesmas propriedades, você vai querer usar um **Style**, o que é explorada no Capítulo 12.
 
