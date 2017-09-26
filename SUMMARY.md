@@ -83,7 +83,6 @@
   * [Eventos e Handlers](capitulo_8_-_codigo_e_xaml_em_harmonia/eventos_e_handlers.md)
   * [Gestos de Toque](capitulo_8_-_codigo_e_xaml_em_harmonia/gestos_de_toque.md)
 * [Capítulo 9 - Chamadas de API específicas da plataforma](capitulo_9/README.md)
-  * [Chamadas de API específicas da plataforma](capitulo_9/chamadas_de_api_especificas_da_plataforma.md)
   * [Pré-processamento no compartilhamento do Projeto](capitulo_9/pre-processamento_no_compartilhamento_do_projeto.md)
   * [As classes paralelas e o compartilhamento do projeto](capitulo_9/as_classes_paralelas_e_o_compartilhamento_do_proje.md)
   * [DependencyService e Biblioteca de Classes Portátil.](capitulo_9/dependencyservice_e_biblioteca_de_classes_portatil.md)
